@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sushant Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+<style>
+	/*css reset*/
+	body {
+		font-family: 'Baloo Bhaina 2', cursive;
+		color: white;
+		margin: 0px;
+		padding: 0px;
+		background: url('img/room.jpg');
+	}
+
+	.left {
+		position: absolute;
+		left: 35px;
+		top: 20px;
+		display: inline-block;
+	}
+
+	.middle {
+		display: block;
+		width: 35%;
+		margin: 20px auto;
+	}
+
+	.right {
+		position: absolute;
+		right: 34px;
+		top: 20px;
+		display: inline-block;
+	}
+
+	.navbar {
+		display: inline-block;
+	}
+
+	.navbar li {
+		font-size: 15px;
+		display: inline-block;
+	}
+
+	.navbar li a {
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+		padding: 10px 10px;
+	}
+
+	.navbar li a:hover,.navbar li a.active {
+		text-decoration: underline;
+		color: gray;
+	}
+
+	.left img {
+		width: 90px;
+		filter: invert(100%);
+
+	}
+
+	.left div {
+		line-height: 0.5px;
+		text-align: center;
+		font-size: 15.6px;
+	}
+	.btn {
+		font-family: 'Baloo Bhaina 2', cursive;
+		margin: 0px 9px;
+		background-color: black;
+		color: white;
+		padding: 3px 4px;
+		border: 2px solid grey;
+		border-radius: 10px;
+		font-size: 15px;
+		cursor: pointer;
+	}
+
+
+	
+	.btn:hover {
+		background-color: rgb(49, 45, 45);
+
+	}
+	.container{
+		border: 2px solid green;
+		margin: 50px 90px;
+    	padding: 15px 45px;
+		width: 33%;
+		border-radius: 2px;
+		text-align: center;
+	}
+	.formgroup input{
+		font-family: 'Baloo Bhaina 2', cursive;
+		text-align: center;
+    display: block;
+    width: 350px;
+    padding: 4px;
+    border: 2px solid black;
+    margin: 6px auto;
+    font-size: 16px;
+    border-radius: 14px;
+	}
+	.container button{
+		display: block;
+		width: 87%;
+		margin: 2px auto;
+	}
+</style>
+
+<body>
+
+	<header class="header">
+		<!-- left box for logo -->
+		<div class="left">
+			<img src="img/logo.jpg" alt="">
+			<div>Sushant Fitness</div>
+		</div>
+		<!-- mid box for navbar -->
+		<div class="middle">
+			<ul class="navbar">
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Fitness Calculator</a></li>
+				<li><a href="#">Contact Us</a></li>
+
+			</ul>
+		</div>
+		<!-- right box for buttons -->
+		<div class="right">
+			<button class="btn">Call Us Now</button><button class="btn">Email</button>
+		</div>
+	</header>
+	<div class="container">
+		<h1>Join the best JYM of LKR</h1>
+		<form action="noaction.php">
+		<div class="formgroup">
+			<input type="text" name="" placeholder="Enter your name">
+		</div>
+		<div class="formgroup">
+			<input type="text" name="" placeholder="Enter your Age">
+		</div>
+		<div class="formgroup">
+			<input type="text" name="" placeholder="Enter your Email">
+		</div>
+		<div class="formgroup">
+			<input type="text" name="" placeholder="Enter your Address">
+		</div>
+		<div class="formgroup">
+			<input type="text" name="" placeholder="Enter your Phone Numbar">
+		</div>
+		<button class="btn">Submit</button>
+	</form>	
+	</div>
+</body>
+
+</html>
